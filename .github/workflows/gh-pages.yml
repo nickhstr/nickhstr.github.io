@@ -2,8 +2,12 @@ name: github pages
 
 on:
   push:
+    paths-ignore:
+      - 'README.md'
     branches:
       - main  # Set a branch name to trigger deployment
+  workflow_dispatch:
+    # for manual runs
 
 jobs:
   deploy:
