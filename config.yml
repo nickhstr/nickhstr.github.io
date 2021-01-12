@@ -1,4 +1,4 @@
-baseURL: "/"
+baseURL: "" # Let Hugo set this automatically
 languageCode: "en-us"
 title: "Nick Hester"
 theme: "hugo-PaperMod"
