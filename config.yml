@@ -11,8 +11,6 @@ params:
       url: "https://github.com/nickhstr"
     - name: linkedin
       url: "https://www.linkedin.com/in/nickhstr/"
-  keywords:
-    - Software
   description: "Nick Hester's personal site."
   showShareButtons: true
   showReadingTime: true
