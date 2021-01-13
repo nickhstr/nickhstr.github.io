@@ -1,0 +1,80 @@
+{{ define "main" }}
+{{ with .Site.Data.resume.resume }}
+<header class="post-header">
+  <h1 class="post-title">{{- .basics.name -}}</h1>
+  <div class="post-meta">
+    {{- .basics.label -}}&nbsp;·&nbsp;{{- .basics.location.city -}},&nbsp;{{- .basics.location.region -}}
+  </div>
+</header>
+<div class="post-content">
+  <h2>Work</h2>
+  {{ range .work }}
+    <h3>{{ .position }}</h3>
+    <div class="post-meta">
+      {{ .company }}
+      · {{ .location }}
+      · {{ dateFormat "January 2006" (printf "%s-%s" .startDate "01") -}}
+        &nbsp;-&nbsp;
+        {{- if .endDate }}
+          {{- dateFormat "January 2006" (printf "%s-%s" .endDate "01") -}}
+        {{- else }}
+          {{- "Present" }}
+        {{ end }}
+    </div>
+    <ul>
+      {{ range .highlights }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  <h2>Projects</h2>
+  {{ range .projects }}
+    <h3>{{ .name }}</h3>
+    <div class="post-meta">
+      {{ dateFormat "January 2006" (printf "%s-%s" .startDate "01") -}}
+        &nbsp;-&nbsp;
+        {{- if .endDate }}
+          {{- dateFormat "January 2006" (printf "%s-%s" .endDate "01") -}}
+        {{- else }}
+          {{- "Present" }}
+        {{ end }}
+    </div>
+    <p>{{ .description }}</p>
+  {{ end }}
+  <h2>Skills</h2>
+  {{ range .skills }}
+    <h3>{{ .name }}</h3>
+    <div class="post-meta">
+      {{- range $i, $e := .keywords }}
+        {{ if $i }} · {{ end }}
+        {{- $e -}}
+      {{ end }}
+    </div>
+  {{ end }}
+  <h2>Awards</h2>
+  {{ range .awards }}
+    <h3>{{ .title }}</h3>
+    <div class="post-meta">
+      {{ .awarder }}
+      · {{ dateFormat "2006" (printf "%s-%s" .date "01") -}}
+    </div>
+    <p>{{ .summary }}</p>
+  {{ end }}
+  <h2>Education</h2>
+  {{ range .education }}
+    <h3>{{ .area }}</h3>
+    <div class="post-meta">
+      {{ .institution }}
+      · {{ .studyType }}
+      · {{ dateFormat "January 2006" (printf "%s-%s" .startDate "01") -}}
+        &nbsp;-&nbsp;
+        {{- if .endDate }}
+          {{- dateFormat "January 2006" (printf "%s-%s" .endDate "01") -}}
+        {{- else }}
+          {{- "Present" }}
+        {{ end }}
+    </div>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}{{/* end main */}}
