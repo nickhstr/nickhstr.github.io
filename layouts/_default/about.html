@@ -1,0 +1,23 @@
+{{- define "main" }}
+
+<article class="post-single">
+  {{- $isHidden := ((.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInSingle) | default .Params.cover.hidden )}}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
+  {{- if .Params.ShowToc }}
+  <div class="toc">
+    <details {{if .Params.TocOpen }} open{{ end }}>
+      <summary accesskey="c" title="(Alt + C)">
+        <div class="details">{{- i18n "toc" | default "Table of Contents" }}</div>
+      </summary>
+      <blockquote>
+        {{- partial "toc.html" . }}
+      </blockquote>
+    </details>
+  </div>
+  {{- end }}
+  <div class="post-content">
+    {{- partial "anchored_headings.html" .Content -}}
+  </div>
+</article>
+
+{{- end  }}{{/* end main */}}
