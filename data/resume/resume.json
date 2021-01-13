@@ -1,0 +1,137 @@
+{
+  "basics": {
+    "name": "Nick Hester",
+    "label": "Software Engineer",
+    "email": "nickhstr@gmail.com",
+    "phone": "(209) 620-2321",
+    "website": "https://nickhstr.com",
+    "location": {
+      "city": "San Diego",
+      "region": "CA"
+    }
+  },
+  "education": [
+    {
+      "institution": "California State University, Chico",
+      "location": "Chico, CA",
+      "studyType": "B.S.",
+      "area": "Project Management",
+      "startDate": "2011-08",
+      "endDate": "2015-05"
+    },
+    {
+      "institution": "Udacity",
+      "location": "Online",
+      "studyType": "Nanodegree",
+      "area": "Front End Web Development",
+      "startDate": "2016-02",
+      "endDate": "2016-03"
+    },
+    {
+      "institution": "Udacity",
+      "location": "Online",
+      "studyType": "Nanodegree",
+      "area": "Senior Web Development",
+      "startDate": "2016-06",
+      "endDate": "2016-09"
+    }
+  ],
+  "work": [
+    {
+      "company": "The Weather Company, IBM",
+      "location": "San Diego, CA",
+      "position": "Senior Software Engineer",
+      "website": "",
+      "highlights": [
+        "Developed the web development team's first Go REST API, scalable up to at least the millions of weather.com users."
+      ],
+      "startDate": "2020-09"
+    },
+    {
+      "company": "The Weather Company, IBM",
+      "location": "Atlanta, GA",
+      "position": "Software Engineer",
+      "website": "",
+      "highlights": [
+        "Dubbed the Performance Subject Matter Expert for the web development team.",
+        "Lead the core development team for the website redesign - a 30% more performant application over the previous design.",
+        "Led 40% performance improvement project for weather.com in 2018."
+      ],
+      "startDate": "2017-04",
+      "endDate": "2020-09"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Go",
+        "Sass"
+      ],
+      "name": "Languages"
+    },
+    {
+      "keywords": [
+        "Node",
+        "React",
+        "Redux",
+        "Redis",
+        "Webpack",
+        "Mongodb",
+        "Git",
+        "Docker",
+        "Jenkins"
+      ],
+      "name": "Tools"
+    }
+  ],
+  "projects": [
+    {
+      "description": "With hundreds of page configuration variants in our CMS, we needed a way to reduce that number, while still serving highly-dynamic pages, very quickly, with little overhead at runtime. To solve this, I created a new microservice in Go (first production Go service for the weather.com web development team), which has allowed us to query for the best-matching page variant, and reduce the number of page variants by 60%. Capable of handling 100 times its typical request rate.",
+      "url": "https://weather.com",
+      "keywords": [
+        "Go",
+        "Mongodb",
+        "Redis"
+      ],
+      "name": "Page Variant Microservice",
+      "startDate": "2020-04",
+      "endDate": "2020-07"
+    },
+    {
+      "description": "As part of a redesign of weather.com, I have led the core development on the new application architecture. This has involved creating multiple Node.js REST services, including a data query service, a translations service, and a React rendering service, to serve weather.com pages. As the lead on this full-stack front, I've taken pride in driving an overall 30% performance improvement over the previous design.",
+      "url": "https://weather.com",
+      "keywords": [
+        "JavaScript",
+        "Node",
+        "React",
+        "Redux"
+      ],
+      "name": "Weather.com Redesign",
+      "startDate": "2018-10",
+      "endDate": "2020-12"
+    },
+    {
+      "description": "Beginning at the start of 2018, I led an initiative in refactoring the codebase of weather.com to be more performant. This included work on both the server-side and on the client-side. Concluding in July of 2018, the project was deemed a success; client-side loading times had decreased, page visits increased, and ad impression rates increased as well, all leading to a 33% increase in revenue from the prior year.",
+      "url": "https://weather.com",
+      "keywords": [
+        "JavaScript",
+        "Node",
+        "React"
+      ],
+      "name": "Weather.com Performance Refactor",
+      "startDate": "2018-01",
+      "endDate": "2018-07"
+    }
+  ],
+  "awards": [
+    {
+      "awarder": "The Weather Company",
+      "title": "Super Hero Award",
+      "date": "2019-09",
+      "summary": "Recognized for going above and beyond to get the job done."
+    }
+  ]
+}

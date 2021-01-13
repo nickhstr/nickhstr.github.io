@@ -39,6 +39,10 @@ menu:
       name: "Search"
       url: "/search/"
       weight: 3
+    - identifier: "resume"
+      name: "Resume"
+      url: "/resume/"
+      weight: 4
 enableRobotsTXT: true
 enableGitInfo: true
 minify:
