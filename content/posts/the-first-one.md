@@ -2,6 +2,8 @@
 title: "The First One"
 date: 2021-01-10T13:08:58-08:00
 draft: false
+tags:
+  - "general"
 ---
 
 It's about time I finally create a blog.
