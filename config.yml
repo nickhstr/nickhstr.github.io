@@ -4,8 +4,8 @@ theme: "hugo-PaperMod"
 params:
   defaultTheme: "auto"
   homeInfoParams:
-    Title: "Hi, I'm Nick Hester"
-    Content: "Software Engineer, tinkerer, nerd."
+    Title: "Hi there 👋"
+    Content: "I'm Nick Hester. Software Engineer, tinkerer, nerd."
   socialIcons:
     - name: github
       url: "https://github.com/nickhstr"
