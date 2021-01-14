@@ -1,0 +1,13 @@
+:root {
+  --primary: #000;
+  --secondary: #777;
+  --tertiary: #ccc;
+  --content: #444;
+}
+
+.dark {
+  --primary: #fff;
+  --secondary: #aaa;
+  --tertiary: #555;
+  --content: #bbb;
+}
