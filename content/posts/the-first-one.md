@@ -9,6 +9,6 @@ tags:
 It's about time I finally create a blog.
 
 Being a software engineer, posts about software, programming, and technology in general are sure to be prominent subjects.
-However, posts won't be limited to these topics. 😉
+However, posts won't be limited to these topics.
 
 Anything I write about is totally subjective; please don't take any of my words too seriously.
