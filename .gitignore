@@ -280,5 +280,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/sublimetext,vscode,vim,git,node,go,macos,linux,windows
-
-public/
+.hugo_build.lock
