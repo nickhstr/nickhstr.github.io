@@ -11,7 +11,7 @@ params:
       url: "https://github.com/nickhstr"
     - name: linkedin
       url: "https://www.linkedin.com/in/nickhstr/"
-  description: "Nick Hester's personal site."
+  description: "Nick Hester's internet home."
   showShareButtons: true
   showReadingTime: true
   assets:
